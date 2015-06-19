@@ -82,8 +82,8 @@ function Computer(memory, screenSize) {
     this.memory = memory;
     this.screenSize = screenSize;
 
-    this.turnOn = function() {
-        console.log("Powering Up" )
+    this.turnOn = function turnOn() {
+        console.log("Powering Up")
     }
 } 
 
@@ -99,7 +99,7 @@ function ComputerStore(name, address) {
     this.name = name;
     this.address = address;
 
-    this.makeComputer = function() {
+    this.makeComputer = function makeComputer() {
     	return new Computer() 
     }
 } 
